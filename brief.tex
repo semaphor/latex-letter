@@ -1,0 +1,66 @@
+\documentclass[a4paper,11pt]{dinbrief}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}					%Aktueller Zeichensatz
+\usepackage[ngerman]{babel}					%Umlaute, Satztrennung, ....
+%\usepackage{german}
+\usepackage{marvosym}							%Symbole für E-Mail, Telefon, Mobil, etc.
+\usepackage{wasysym}
+\usepackage{dingbat}
+\usepackage{eurosym}							%Eurosymbol
+\usepackage{graphicx}							%Einbinden von Grafiken
+\usepackage{mathpazo}
+\usepackage{helvet}
+\usepackage{courier}
+%\usepackage{array}								%mehrzeilige Tabellen benötigt
+%\usepackage{caption}							%Bildunterschriften
+%\usepackage{lastpage}							%Variable, die immer die Letzte Seite des Dokuments zurckliefert
+%\usepackage{fancyhdr}							%manuelles bearbeiten der Kopf und Fuzeile
+\usepackage{paralist}
+\usepackage[tracking=true]{microtype}
+
+
+%%%%% Variablenbelegung %%%%%
+\newcommand{\Datumsangabe}[1]{\newcommand{\VariableDatum}{#1}}
+\newcommand{\Betreffszeile}[1]{\newcommand{\VariableBetreff}{#1}}
+\newcommand{\Kontaktinformationen}[1]{\newcommand{\VariableAbsender}{#1}}
+\newcommand{\Ruecksendefeld}[1]{\newcommand{\VariableRuecksendefeld}{#1}}
+\newcommand{\Empfaenger}[1]{\newcommand{\VariableEmpfaenger}{#1}}
+\newcommand{\Anrede}[1]{\newcommand{\VariableAnrede}{#1}}
+\newcommand{\Text}[1]{\newcommand{\VariableText}{#1}}
+\newcommand{\Grusz}[1]{\newcommand{\VariableGrusz}{#1}}
+\newcommand{\Anhang}[1]{\newcommand{\VariableAnhang}{#1}}
+
+
+
+\begin{document}
+
+\pdfinfo{
+        /Author(Franz)
+        /Title()
+        /Subject()
+        /Keywords()
+        /Producer()
+        /Creator()
+        /CreationDate(D:20101109080000)			%z.B. /CreationDate(D:20101109080000)
+        /CreationDate()
+        /ModDate ()
+		}
+
+        \include{inhalt}
+
+		\begin{letter}{\VariableEmpfaenger}
+		
+			\opening{Anrede: Sehr geehrte Damen und Herren,}
+		
+			\VariableText
+				
+			%\closing{Mit freundlichen Grüßen\\[2ex]\includegraphics{unterschrift.png}\\Franz Kafka}
+			\closing{\VariableGrusz}
+		
+			\encl{\VariableAnhang}
+
+		\end{letter}
+
+\end{document}

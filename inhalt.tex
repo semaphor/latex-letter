@@ -1,0 +1,109 @@
+%%%% Aussehen %%%%
+%\nowindowtics										%versteckt die Falzmarken
+\nowindowrules									%versteckt Begrenzungslinien für das Adressfeld
+%\setlength{\textheight}{30cm}						%kann benutzt werden um den Seitenumbruch zu manipulieren
+
+
+%%%% Empfänger %%%%
+\Empfaenger{
+Max Masterman\\
+Madisonave. 7 \par
+D-89666 Ululum
+}
+%\vspace{1.8cm}
+
+%%%% Betreff %%%%
+\subject{\textbf{
+Betreffliche Betroffenheit
+}}
+
+
+%%%% Datum %%%%
+\Datum{
+Ulm, \today										%bei bedarf \today auskommentieren und Datum selbst setzen
+}
+
+
+%%%% Anrede %%%%
+\Anrede{
+Sehr geehrte Damen und Herren,
+}
+
+
+%%%% Text, Inhalt %%%%
+\Text{
+\Letter
+Es war spät abends, als K. ankam. Das Dorf lag in tiefem Schnee. Vom Schloßberg war nichts zu sehen, Nebel und Finsternis umgaben ihn, auch nicht der schwächste Lichtschein deutete das große Schloß an. Lange stand K. auf der Holzbrücke, die von der Landstraße zum Dorf führte, und blickte in die scheinbare Leere empor.
+
+Dann ging er, ein Nachtlager suchen; im Wirtshaus war man noch wach, der Wirt hatte zwar kein Zimmer zu vermieten, aber er wollte, von dem späten Gast äußerst überrascht und verwirrt, K. in der Wirtsstube auf einem Strohsack schlafen lassen. K. war damit einverstanden. Einige Bauern waren noch beim Bier, aber er wollte sich mit niemandem unterhalten, holte selbst den Strohsack vom Dachboden und legte sich in der Nähe des Ofens hin. Warm war es, die Bauern waren still, ein wenig prüfte er sie noch mit den müden Augen, dann schlief er ein.
+
+Aber kurze Zeit darauf wurde er schon geweckt. Ein junger Mann, städtisch angezogen, mit schauspielerhaftem Gesicht, die Augen schmal, die Augenbrauen stark, stand mit dem Wirt neben ihm. Die Bauern waren auch noch da, einige hatten ihre Sessel herumgedreht, um besser zu sehen und zu hören. Der junge Mensch entschuldigte sich sehr höflich, K. geweckt zu haben, stellte sich als Sohn des Schloßkastellans vor und sagte dann: »Dieses Dorf ist Besitz des Schlosses, wer hier wohnt oder übernachtet, wohnt oder übernachtet gewissermaßen im Schloß. Niemand darf das ohne gräfliche Erlaubnis. Sie aber haben eine solche Erlaubnis nicht oder haben sie wenigstens nicht vorgezeigt.«
+
+K. hatte sich halb aufgerichtet, hatte die Haare zurechtgestrichen, blickte die Leute von unten her an und sagte: »In welches Dorf habe ich mich verirrt? Ist denn hier ein Schloß?«
+
+»Allerdings«, sagte der junge Mann langsam, während hier und dort einer den Kopf über K. schüttelte, »das Schloß des Herrn Grafen Westwest.«
+
+»Und man muß die Erlaubnis zum Übernachten haben?« fragte K., als wolle er sich davon überzeugen, ob er die früheren Mitteilungen nicht vielleicht geträumt hätte.
+
+»Die Erlaubnis muß man haben«, war die Antwort, und es lag darin ein großer Spott für K., als der junge Mann mit ausgestrecktem Arm den Wirt und die Gäste fragte: »Oder muß man etwa die Erlaubnis nicht haben?«
+
+»Dann werde ich mir also die Erlaubnis holen müssen«, sagte K. gähnend und schob die Decke von sich, als wolle er aufstehen.
+
+»Ja von wem denn?« fragte der junge Mann.
+
+»Vom Herrn Grafen«, sagte K., »es wird nichts anderes übrigbleiben.«
+
+»Jetzt um Mitternacht die Erlaubnis vom Herrn Grafen holen?« rief der junge Mann und trat einen Schritt zurück.
+
+»Ist das nicht möglich?« fragte K. gleichmütig. »Warum haben Sie mich also geweckt?«
+}
+
+
+%%%% Grußformel, Unterschrift, Name %%%%
+\Grusz{
+Mit freundlichen Grüßen\\[2ex]\includegraphics[height=1cm]{unterschrift.png}\\Franz Kafka
+}
+
+%%%% oder ohne Grafik %%%%
+
+%\Grusz{
+%Mit freundlichen Grüßen
+%}
+%\signature{
+%Franz Kafka
+%}
+
+
+%%%% Auflistung Anhang %%%%
+\Anhang{
+Manuscriptum\\
+Photographie
+}
+
+
+
+%%%% Rücksendefeld %%%%
+\backaddress{
+Franz Kafka, Náměstí Franze Kafky 1, CZ-110 00 Praha 1
+}
+
+
+%%%% Absender %%%%
+
+\def\briefkopf{
+%\vspace{1em}
+\hfill
+\begin{flushright}
+\begin{tabular}{rl}
+& Franz Kafka\\
+& Náměstí Franze Kafky 1\\
+& CZ-110 00 Praha 1\\
+\textit{Fon} & +420-6767676\\
+\textit{Mobil} & +420-88998899\\
+\textit{Mail/XMPP} & me@franzkafka.de\\
+\textit{Web} & http://www.franzkafka.de\\
+\end{tabular}
+\end{flushright}
+}
+
+\address{\briefkopf}
